@@ -12,8 +12,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+@keyframes icons-moving {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer-icons__img {
   width: 33px;
+}
+.footer-icons__img:hover {
+  animation: 1s icons-moving;
 }
 .footer-icons__desc {
   font-size: 15px;
