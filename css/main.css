@@ -42,7 +42,7 @@ main {
   font-size: 15px;
 }
 .write-btn {
-  background-color: coral;
+  background-color: var(--button-primary);
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
   font-size: 20px;
@@ -51,4 +51,10 @@ main {
   bottom: 120px;
   right: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
