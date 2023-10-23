@@ -1,0 +1,31 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw; /* 보여지는 화면의 100% 채운다는의미의 vw */
+  padding-bottom: 25px;
+  border-top: 3px solid rgb(247, 247, 247);
+  padding-top: 10px;
+  background-color: white;
+}
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons__img {
+  width: 33px;
+}
+.footer-icons__desc {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.footer-icons {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column; /* 블록을 위 아래로 배치해주는코드 */
+  justify-content: center;
+  align-items: center;
+  margin: -5px 25px -10px 20px;
+  cursor: pointer; /* 아이콘위에 마우스올렸을때 포인터모양바뀜 */
+}
