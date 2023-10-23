@@ -2,7 +2,6 @@
 @import "header.css";
 @import "footer.css";
 @import "main.css";
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
@@ -15,7 +14,6 @@ body {
     opacity: 1;
   }
 }
-
 /* 화면크기맞춰달라는 문구넣는거 */
 .media-info-msg {
   position: absolute;
