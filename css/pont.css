@@ -2,6 +2,11 @@
 @import "header.css";
 @import "footer.css";
 @import "main.css";
+
+:root {
+  --button-primary: coral;
+  --button-hover: goldenrod;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
