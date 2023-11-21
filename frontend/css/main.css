@@ -1,10 +1,10 @@
 main {
-  padding: 30px 20px 30px 10px;
+  padding: 30px 20px 100px 10px;
 }
 
 .item-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px 0 20px 0;
@@ -18,9 +18,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /*이미지사이즈안맞는영역 안보이게하는*/
 }
 .item-list__img img {
-  width: 50px;
+  width: 100%;
+  height: 100%;
 }
 .item-list__info {
   padding-top: 20px;
