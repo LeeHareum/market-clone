@@ -9,6 +9,19 @@ con = sqlite3.connect('db.db',check_same_thread=False)
 cur = con.cursor()
 
 
+cur.execute(f"""
+            CREATE TABLE IF NOT EXISTS items (
+	        id INTEGER PRIMARY KEY,
+	        title TEXT NOT NULL,
+	        image BLOB,
+	        price INTEGER NOT NULL,
+	        description TEXT,
+	        place TEXT NOT NULL,
+	        insertAt integer NOT NULL
+            );
+            """)      # IF NOT EXISTS_테이블이 없을때만 생성하게하는
+
+
 app = FastAPI()
 
 @app.post('/items')
